@@ -11,7 +11,7 @@ import com.tareas.service.TaskAdministrator;
 import java.util.List;
 
 public class Main {
-  static void main(String[] args) {
+  public static void main(String[] args) {
     User usuario1 = new UserImpl(1, "Matute", "matute@gmail.com");
     User usuario2 = new UserImpl(2, "patinetaKiller", "patinetakiller@gmail.com");
     User usuario3 = new UserImpl(3, "rubio", "rubio@gmail.com");
