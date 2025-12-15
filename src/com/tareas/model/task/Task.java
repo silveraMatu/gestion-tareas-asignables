@@ -4,14 +4,12 @@ import com.tareas.model.user.User;
 public abstract class Task{
   private final int id;
   private String title;
-  private String description;
   private StateTask state;
   private User asignedA;
 
-  public Task(int id, String title, String description, StateTask state){
+  public Task(int id, String title, StateTask state){
     this.id = id;
     this.title = title;
-    this.description = description;
     this.state = state;
     this.asignedA = null;
   }
@@ -28,10 +26,6 @@ public abstract class Task{
     return title;
   }
 
-  public String getDescription() {
-    return description;
-  }
-
   public StateTask getState() {
     return state;
   }
@@ -43,10 +37,6 @@ public abstract class Task{
   //setters
   public void setTitle(String title) {
     this.title = title;
-  }
-
-  public void setDescription(String description) {
-    this.description = description;
   }
 
   public void cambiarEstado(StateTask newState){
